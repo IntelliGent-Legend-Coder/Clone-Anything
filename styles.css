@@ -1,0 +1,51 @@
+/* Custom styles */
+.hero-section {
+    background-image: url("https://source.unsplash.com/random/1920x1080/?technology");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .logo-scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logo-container {
+    display: inline-block;
+    animation: scroll 60s linear infinite;
+  }
+  
+  .logo-item {
+    display: inline-block;
+    margin: 0 2rem;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-section {
+      text-align: center;
+    }
+  }
+  
+  

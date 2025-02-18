@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span class="text-sm text-gray-600">kenzchy.design@gmail.com</span>
+                <button class="btn btn-sm btn-outline-dark" id="copyEmail">
+                    <i class="bi bi-clipboard me-2"></i>Copy
+                </button>
+                <button class="btn btn-sm btn-outline-dark">
+                    <i class="bi bi-file-earmark-text me-2"></i>CV
+                </button>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">LinkedIn</a></li>
+                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Dribbble</a></li>
+                    <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative min-h-screen flex items-center">
+        <div class="container mx-auto px-4 z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Building digital products, brands, and experience.</h1>
+                    <p class="text-xl mb-6 text-gray-600">Transforming ideas into exceptional digital experiences.</p>
+                    <button class="btn btn-dark btn-lg rounded-pill px-6">
+                        Latest Work
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img src="itay-verchik-YmQ8TrsieE4-unsplash.jpg" alt="Developer" class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-lg">
+                        <div class="absolute -top-2 -right-2 bg-yellow-400 w-10 h-10 rounded-full flex items-center justify-center text-2xl">
+                            ✨
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Scroll Logos -->
+    <section class="py-16 bg-gray-100 overflow-hidden">
+        <div class="logo-scroll">
+            <div class="logo-container">
+                <!-- Logos will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                Collaborate with brands <span class="text-gray-500">and agencies to create impactful results.</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-3xl mb-4">🎨</div>
+                    <h3 class="text-xl font-semibold mb-2">UX & UI</h3>
+                    <p class="text-gray-600">Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-3xl mb-4">📱</div>
+                    <h3 class="text-xl font-semibold mb-2">Web & Mobile App</h3>
+                    <p class="text-gray-600">Transforming ideas into applications with a mobile-first approach.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-3xl mb-4">✏️</div>
+                    <h3 class="text-xl font-semibold mb-2">Design & Creative</h3>
+                    <p class="text-gray-600">Crafting visually stunning designs that connect with your audience.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-3xl mb-4">💻</div>
+                    <h3 class="text-xl font-semibold mb-2">Development</h3>
+                    <p class="text-gray-600">Bringing your ideas to life with the latest technology and best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">About Me</h4>
+                    <p class="text-gray-400">Passionate developer creating innovative digital solutions for brands and businesses.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Get in Touch</h4>
+                    <p class="text-gray-400 mb-2">Email: kenzchy.design@gmail.com</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-dribbble"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+                <p class="text-gray-400">&copy; 2023 Developer Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
